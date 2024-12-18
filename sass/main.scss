@@ -53,7 +53,9 @@ body{
     }
 
 
-
+    h1{
+        color: black;
+    }
 
 
 
@@ -70,9 +72,22 @@ body{
         .navbar-logo {
           max-width: 100px; 
         }
-      }
 
+        #hero-image {
+            content: url('https://via.placeholder.com/1000x1600'); /* Mobile image */
+          }
+      
+        .hero-section{
+            
+            
+            height: 80vh;
+          }
+    
+    
+    
+    }
 
+    
 
 
 

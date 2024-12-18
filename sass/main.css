@@ -47,9 +47,19 @@ body {
   border-color: white;
 }
 
+h1, .h1 {
+  color: black;
+}
+
 @media (max-width: 768px) {
   .navbar-logo {
     max-width: 100px;
+  }
+  #hero-image {
+    content: url("https://via.placeholder.com/1000x1600"); /* Mobile image */
+  }
+  .hero-section {
+    height: 80vh;
   }
 }
 /*!
