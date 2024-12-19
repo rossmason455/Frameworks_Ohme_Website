@@ -59,6 +59,11 @@ h1, .h1 {
   background-color: #41A3FF;
 }
 
+footer {
+  background-color: #41A3FF !important;
+  color: white !important;
+}
+
 @media (max-width: 768px) {
   .navbar-logo {
     max-width: 100px;
