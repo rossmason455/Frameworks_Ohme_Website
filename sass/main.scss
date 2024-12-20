@@ -33,6 +33,15 @@ body{
   }
 
 
+
+  .pb-10 {
+    padding-bottom: 6rem !important;
+  }
+
+  .mb-10{
+    margin-bottom: 6rem;
+  }
+
   .navbar-logo {
     width: 200px;  
     height: auto; 
@@ -73,39 +82,18 @@ body{
      }
 
 
+   
 
 
 
-
-
-    @media (max-width: 768px) {
-        .navbar-logo {
-          max-width: 100px; 
-        }
-
-        #hero-image {
-            content: url('https://via.placeholder.com/1000x1600'); 
-          }
-      
-        .hero-section{
-            
-            
-            height: 80vh;
-            margin-bottom: 500px;
-          }
-          
-
-       
-
-          .banner-section{
-           display: none;
-          }
-    
-          
+     @media (max-width: 769px) {
+      .banner-section{
+        display: none !important;
+      }
     }
+   
+    
 
-    
-    
 
 
 
