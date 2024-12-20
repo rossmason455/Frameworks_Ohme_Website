@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="./sass/main.css">
@@ -51,11 +57,11 @@
   
 
       <section class="hero-section container-fluid  text-white">
-        <div class="row">
+        <div class="row d-lg-flex d-sm-none">
       
           <div class="col-12 text-center mb-4 fs-5 text-dark">
             <h1 class="mt-5" >Smarter Energy Management Starts Here with Ohme.</h1>
-            <p>This is some introductory text or description. You can use this space to explain something about your site, product, or service.</p>
+            <p>Empowering you to track, optimize, and achieve your energy goals effortlessly—Ohme makes sustainable living simple and rewarding.</p>
           </div>
           
          
@@ -64,6 +70,27 @@
           </div>
         </div>
       </section>
+
+
+      <section class="hero-section-mobile container-fluid  text-white vh-25 mb-10">
+        <div class="row d-lg-none d-sm-block">
+          <div class="col-12 position-relative">
+     
+            <img src="https://via.placeholder.com/320x896" class="img-fluid w-100" alt="Descriptive Image" id="banner-image">
+            
+          
+            <div class="position-absolute top-0 start-0 p-3">
+              <h1 class="text-black mt-5 mb-1 p-3">Smarter Energy Management Starts Here with Ohme</h1>
+              <p class="text-black p-3"> Take control of your energy consumption with our intuitive app. Track your usage in real-time, set personalized goals, and make informed decisions to reduce waste and save money, all from the convenience of your phone.
+              </p></p>
+               <button class="button mr-2 fs-5 fw-bold d-none d-lg-block" type="submit">Download</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
       <section class="key-features-section container my-5 p-6 mt-5">
         <h2 class="mb-4">Key Features</h2>
@@ -109,7 +136,7 @@
                 
               
                 <div class="position-absolute top-50 start-50 translate-right  text-light ">
-                  <h1>Smarter Energy Management Starts Here with Ohme</h1>
+                  <h3 class="fs-2">Smarter Energy Management Starts Here with Ohme</h3>
                   <p>Manage your energy usage more efficiently with our intuitive app.</p>
                    <button class="button mr-2 fs-5 fw-bold d-none d-lg-block" type="submit">Download</button>
                 </div>
