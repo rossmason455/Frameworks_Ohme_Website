@@ -40,7 +40,7 @@ body {
 }
 
 .navbar-logo {
-  width: 200px;
+  width: 150px;
   height: auto;
   background-color: white !important;
 }
@@ -76,11 +76,24 @@ footer {
   width: 50px;
 }
 
-.testimonials-section-background {
-  background-color: #41A3FF;
+.testimonial {
+  background-color: white;
 }
 
-.testimonial {
+.set-up-image {
+  width: 400px;
+  height: 400px;
+}
+
+.key-features-features-section-background {
+  background-color: #C1E1FF;
+}
+
+.testimonials-section-background {
+  background-color: #C1E1FF;
+}
+
+.key-features-hero-mobile-text {
   background-color: white;
 }
 
