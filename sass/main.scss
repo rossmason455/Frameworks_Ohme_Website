@@ -1,133 +1,90 @@
-body{
-    font-family: "Roboto", serif;
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+$custom-font-family: "Roboto", serif;
+
+$font-family-base: $custom-font-family;
+
+
+
+$custom-background-colour: #c1e1ff;
+
+
+$background-colour: $custom-background-colour;
+
+
+.bg-custom {
+  background-color: $background-colour !important;
 }
 
-.p-6{
-    padding: 4rem !important;
-  }
 
+$navbar-link-gap: 10rem;
 
-.gap-6 {
-    gap: 3.5rem !important;
-  }
-  
-  .gap-7 {
-    gap: 4rem !important;
-  }
-  
-  .gap-8 {
-    gap: 4.5rem !important;
-  }
-  
-  .gap-9 {
-    gap: 5rem !important;
-  }
-  
-  .gap-10 {
-    gap: 6rem !important;
-  }
-  
+$spacers: map-merge(
+  $spacers,
+  (
+    custom-gap: $navbar-link-gap,
+  )
+);
 
-  .gap-18 {
-    gap: 10rem !important;
-  }
+.gap-custom {
+  gap: map-get($spacers, custom-gap);
+}
+.custom-mb {
+  margin-bottom: 6rem;
+}
 
+.navbar-logo {
+  width: 150px;
+  height: auto;
+  background-color: white !important;
+}
 
-
-  .pb-10 {
-    padding-bottom: 6rem !important;
-  }
-
-  .mb-10{
-    margin-bottom: 6rem;
-  }
-
-  .navbar-logo {
-    width: 150px;  
-    height: auto; 
-    background-color: white !important;
-
-    }
-
-    .button{
-        padding: 10px 30px 10px 30px;
-        background-color: #41A3FF;
-        border-color: #41A3FF;
-        color: white;
-        border-radius: 17px;
-        width: 200px
-    }
-
-    .navbar-toggler-icon {
-        color: #41A3FF; /* Your desired color */
-        border-color: white;
-    }
-
-
-    h1{
-        color: black;
-    }
+.button {
+  padding: 10px 30px 10px 30px;
+  background-color: #41a3ff;
+  border-color: #41a3ff;
+  color: white;
+  border-radius: 17px;
+  width: 200px;
+}
 
 
 
-    .banner-section-background{
-      background-color: #C1E1FF;
-     }
+h1 {
+  color: black;
+}
 
+.banner-section-background {
+  background-color: #c1e1ff;
+}
 
+footer {
+  background-color: #41a3ff !important;
+  color: white !important;
+}
 
-     footer{
-      background-color: #41A3FF !important;
-      color: white !important;
-     }
+.user-image {
+  width: 50px;
+}
 
-     .user-image{
-      width: 50px;
-     }
-   
-   
+.set-up-image {
+  width: 400px;
+  height: 400px;
+}
 
-     .testimonial{
-      background-color: white;
-     }
-   
+.key-features-features-section-background {
+  background-color: #c1e1ff;
+}
 
+.testimonials-section-background {
+  background-color: #c1e1ff;
+}
 
-     .set-up-image{
-      width: 400px;
-      height: 400px;
-     }
-
-
-     .key-features-features-section-background{
-      background-color: #C1E1FF;
-     }
-
-     .testimonials-section-background{
-      background-color: #C1E1FF;
-     }
-
-     .key-features-hero-mobile-text{
-      background-color: white;
-     }
-
-
-     @media (max-width: 769px) {
-      .banner-section{
-        display: none !important;
-      }
-    
-    
-   
-    
-    
-    }
-   
-    
-
-
-
-
-
+.key-features-hero-mobile-text {
+  background-color: white;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
