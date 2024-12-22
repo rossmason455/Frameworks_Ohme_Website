@@ -2,89 +2,82 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+// Typography
+$custom-font-family: "Roboto", serif; // Custom font family for the project
+$font-family-base: $custom-font-family; // Base font family for all text
 
-$custom-font-family: "Roboto", serif;
+// Color palette
+$custom-colour-1: #c1e1ff; // Light blue for backgrounds
+$custom-colour-2: #41a3ff; // Primary blue for buttons and footer
+$custom-colour-3: #fff;    // White for text on dark backgrounds
 
-$font-family-base: $custom-font-family;
-
-
-
-$custom-background-colour: #c1e1ff;
-
-
-$background-colour: $custom-background-colour;
-
-
-.bg-custom {
-  background-color: $background-colour !important;
+// Footer styles
+.footer-custom-colour {
+  background-color: $custom-colour-2 !important; // Ensure footer has a consistent primary blue background
 }
 
+// General background styles
+.bg-custom-colour {
+  background-color: $custom-colour-1 !important; // Light blue background for sections
+}
 
-$navbar-link-gap: 10rem;
+// Navbar link spacing
+$navbar-link-gap: 10rem; // Custom gap between navbar links
 
+// Adding custom spacing to the Bootstrap $spacers map
 $spacers: map-merge(
   $spacers,
   (
-    custom-gap: $navbar-link-gap,
+    custom-gap: $navbar-link-gap, // Custom spacing value for layout gaps
   )
 );
 
-.gap-custom {
-  gap: map-get($spacers, custom-gap);
-}
+// Margin customization
+$custom-margin-bottom: 6rem; // Bottom margin for specific elements
 .custom-mb {
-  margin-bottom: 6rem;
+  margin-bottom: $custom-margin-bottom; // Utility class for consistent bottom spacing
 }
 
+// Gap utility class
+.gap-custom {
+  gap: map-get($spacers, custom-gap); // Applies the custom gap from the $spacers map
+}
+
+// Button customization
+$btn-padding: 10px 30px;       // Padding for buttons
+$btn-border-radius: 17px;      // Rounded corners for buttons
+$btn-width: 200px;             // Fixed button width
+
+.custom-button {
+  padding: $btn-padding;               // Apply custom padding
+  background-color: $custom-colour-2;  // Use primary blue background
+  border-color: $custom-colour-2;      // Matching border color
+  color: $custom-colour-3;             // Ensure white text on blue background
+  border-radius: $btn-border-radius;   // Apply rounded corners
+  width: $btn-width;                   // Fixed width for uniformity
+}
+
+// Navbar logo styles
 .navbar-logo {
-  width: 150px;
-  height: auto;
-  background-color: white !important;
+  width: 150px;          // Fixed width for logo
+  height: auto;          // Maintain aspect ratio
+  background-color: white !important; // Ensure white background for contrast
 }
 
-.button {
-  padding: 10px 30px 10px 30px;
-  background-color: #41a3ff;
-  border-color: #41a3ff;
-  color: white;
-  border-radius: 17px;
-  width: 200px;
-}
-
-
-
-h1 {
-  color: black;
-}
-
-.banner-section-background {
-  background-color: #c1e1ff;
-}
-
-footer {
-  background-color: #41a3ff !important;
-  color: white !important;
-}
-
+// User profile image
 .user-image {
-  width: 50px;
+  width: 50px; // Small circular profile image
 }
 
+// Setup image styles
 .set-up-image {
-  width: 400px;
-  height: 400px;
+  width: 400px;  // Fixed width for large setup images
+  height: 400px; // Fixed height to maintain a square ratio
 }
 
+// Section background for key features
 .key-features-features-section-background {
-  background-color: #c1e1ff;
-}
-
-.testimonials-section-background {
-  background-color: #c1e1ff;
-}
-
-.key-features-hero-mobile-text {
-  background-color: white;
+  background-color: $custom-colour-1; // Light blue background for the key features section
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
